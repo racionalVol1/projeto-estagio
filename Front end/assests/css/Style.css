@@ -34,13 +34,15 @@ header {
 button {
     border-radius: 30px;
     font-weight: bold;
-    padding: 8px 32px;
+    padding: 8px 8px;
     height: 48px;
     width: 324px;
     letter-spacing: .4px;
     font-size: 16px;
     margin: 20px 0px;
+    
 }
+
 
 section {
     background: white;
@@ -154,3 +156,4 @@ section {
     justify-content: center;
     font-weight: bold;
 }
+
