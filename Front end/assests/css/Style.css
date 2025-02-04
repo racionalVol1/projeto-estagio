@@ -10,25 +10,31 @@ html {
     font-family: CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif;
 }
 
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    background-color: rgb(180, 180, 180);
+    background-color: #090707;
 }
 
 .logo {
-    color: black;
+    color: white;
     font-size: 25px;
     font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    
 }
 
 button {
@@ -43,29 +49,18 @@ button {
     
 }
 
-
-section {
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .main {
-    margin: 10px;
-    padding: 5px;
-    width: 100vh;
-    height: 820px;
-    background-color: rgb(180, 180, 180);
-    border-radius: 5px;
-    align-items: center;
+    padding: 20px 100px;
+    background-color: #090707;
+    border-radius: 5px; 
 }
 
 .main h1 {
     text-align: center;
     margin: 40px 0;
-    color: black;
+    color: white;
     font-size: 40px;
+    
 }
 
 .main hr {
@@ -75,7 +70,7 @@ section {
     border-bottom: none;
     border-left: none;
     border-image: initial;
-    border-top: 1px solid rgba(41, 41, 41);
+    border-top: 1px solid white;
 
 }
 
@@ -104,7 +99,7 @@ section {
     border: none;
     appearance: none;
     border-radius: 4px;
-    color: white;
+    color: black;
 }
 
 .login button {
@@ -122,7 +117,7 @@ section {
 .login a {
     display: block;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: 400;
     text-decoration: underline;
 }
@@ -130,18 +125,18 @@ section {
 .register {
     margin: 10px 0;
     text-align: center;
-    color: black;
+    color: white;
     text-decoration: none;
     margin-right: 3px;
 }
 
 .register span {
-    color: black;
+    color: white;
     margin-right: 3px;
 }
 
 .register a {
-    color: black;
+    color: white;
     text-decoration: underline
 }
 
