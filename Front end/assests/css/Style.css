@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    background-color: #090707;
+    background-color: #241c1a;
 }
 
 .logo {
@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    background-color: black;
+    background-color: #1b1514;
 }
 
 section {
@@ -33,7 +33,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background-color: #1b1514;
     
 }
 
@@ -150,5 +150,12 @@ button {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
+
+.login form select {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
 }
 
