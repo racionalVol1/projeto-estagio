@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    background-color: #241c1a;
+    background-color: #000000;
 }
 
 .logo {
@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    background-color: #1b1514;
+    background-color: #0f0f0f;
 }
 
 section {
@@ -33,7 +33,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1b1514;
+    background-color: #0f0f0f;
     
 }
 
@@ -51,7 +51,7 @@ button {
 
 .main {
     padding: 20px 100px;
-    background-color: #090707;
+    background-color: black;
     border-radius: 5px; 
 }
 
@@ -157,5 +157,11 @@ button {
     font-size: 14px;
     margin-bottom: 8px;
     display: inline-block;
+}
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
 }
 
