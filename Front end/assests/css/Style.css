@@ -1,21 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    font-family: "Poppins", serif;
+
 }
 
-html {
-    font-family: CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif;
+body {
+    background-color: black;
+    color: white;
 }
 
-header {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px;
-    background-color: #000000;
+    height: 100vh;
+}
+
+/* Css da home page */
+
+.side-bar {
+    width: 300px;
+    background-color: #121212;
+    padding: 10px; 
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .logo {
@@ -24,37 +36,82 @@ header {
     font-weight: bold;
 }
 
-body {
-    background-color: #0f0f0f;
-}
-
-section {
-    display: block;
-    justify-content: center;
+.nav-playlists {
+    font-size: 14px;
+    display: flex;
     align-items: center;
-    height: 100vh;
-    background-color: #0f0f0f;
+    background-color: #706e70;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.nav-criar-playlist {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.nav-criar-playlist button {
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.nav-footer {
+    margin-top: auto;
+    
+}
+
+.nav-footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+main {
+padding: 16px;
+flex-grow: 1;
 
 }
 
-button {
-    border-radius: 30px;
-    font-weight: bold;
-    padding: 8px 8px;
-    height: 48px;
-    width: 324px;
-    letter-spacing: .4px;
-    font-size: 16px;
-    margin: 20px 0px;
-
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #242424; 
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
 }
 
-.main {
-    padding: 20px 100px;
-    background-color: black;
-    border-radius: 5px;
-    justify-content: space-between;
+.barra-pesquisa input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-left: 5px;
+    outline: none;
 }
+
+.artistas, .albuns {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+
+}	
+
+.artistas img, .albuns img {
+    width: 200px;
+    border-radius: 8px; 
+}
+
+/* Css login e register */
 
 .main h1 {
     text-align: center;
@@ -170,5 +227,80 @@ section p {
     text-align: center;
     margin: 20px 0;  
 
+}
+
+/* Css do registrar */
+
+.registrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.registrar form label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.registrar form input {
+    align-items: center;
+    padding: 14px;
+    width: 324px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 4px;
+    color: black;
+}
+
+.registrar button {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    width: 324px;
+    letter-spacing: .4px;
+    font-size: 16px;
+    margin: 20px 0px;
+    display: block;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #000000;
+}
+
+header button {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    width: 324px;
+    letter-spacing: .4px;
+    font-size: 16px;
+    margin: 20px 0px;
+    display: block;
+}
+
+.main button {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    width: 324px;
+    letter-spacing: .4px;
+    font-size: 16px;
+    margin: 20px 0px;
+    display: block;
 }
 
