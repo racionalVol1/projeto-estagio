@@ -1,57 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoundFY</title>
-    <link rel="stylesheet" href="/Front end/assests/css/Style.css">
+    <link rel="stylesheet" href="/Front end/assests/css/Register.css">
+    <title>Formulário</title>
 </head>
 
-<body> 
+<body>
+    <div class="container">
+       
+        <div class="form">
+            <form id="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-    <section>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required onblur="namevalidate()">
+                    </div>
 
-        <div class="main">
-            <h1>Cadastre-se</h1>     
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-            <hr>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
 
-            <div class="registrar">
-                <form>
-                    <label for="Nome"></label>
-                    <input type="text" placeholder="Nome">
-                    
-                    <label for="Sobrenome"></label>
-                    <input type="text" placeholder="Sobrenomee">
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
 
-                    <label for="Email"></label>
-                    <input type="email" placeholder="Email">
+                    <div class="input-box">
+                        <label for="date">Data de nacimento</label>
+                        <input id="date" type="date" name="date" placeholder="" required>
+                    </div>
 
-                    <label for="Celular"></label>
-                    <input type="tel" placeholder="Número de telefone">
-                    
-                    <label for="Data de nascimento"></label>
-                    <input type="date">
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
 
-                    <label for="Endereço"></label>
-                    <input type="zip" placeholder="Endereço">
-                    
-                    <label for="Senha"></label>
-                    <input type="password" placeholder="Senha">
+                </div>
 
-                    <label for="Senha"></label>
-                    <input type="password" placeholder="Confirmar senha">
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
 
-                    <button>Registrar</button>
-                </form>
-            </div>  
-           
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
         </div>
-
-    </section>
-
-
-
+    </div>
 </body>
+<script>
+    const form = document.getElementById('form');
+    const campos = form.querySelectorAll('.required');
+    const inputs = form.querySelectorAll('input-box');
+    const gender = form.querySelectorAll('gender-inputs');
+    var emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
+    function namevalidate(){
+        if(campos[0].value.length < 3){
+            console.log('NOME DEVE TER 3 LETRAS');
+        }
+        else{
+            console.log('Valido');
+        }
+    }
+
+
+</script>
+    
 </html>
