@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Front end/assests/css/Register.css">
     <title>SoundFY</title>
-    <link rel="stylesheet" href="/Front end/assests/css/Style.css">
 </head>
-<body>  
 
-    <header>
-        <span class="logo">SoundFY</span>
-    </header>
+<body>
+    <div class="container">
+       
+        <div class="form">
+            <form id="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                   
+                </div>
 
-    <section>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome da banda</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required minlength="3">
+                        <span class="mensagem-erro"></span>
+                    </div>
 
-        <div class="main">
-            <h1>Cadastre-se como artista</h1>     
+                    <div class="input-box">
+                        <label for="lastname">Estilo músical</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required minlength="3">
+                        <span class="mensagem-erro"></span>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required minlength="5">
+                        <span class="mensagem-erro"></span>
+                    </div>
 
-            <hr>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required minlength="11" maxlength="15">
+                        <span class="mensagem-erro"></span>
+                    </div>
 
-            <div class="registrar">
-                <form>
-                    <label for="Nome"></label>
-                    <input type="text" placeholder="Nome">
 
-                    <label for="Nome da banda"></label>
-                    <input type="text" placeholder="Nome da banda">
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required minlength="8" maxlength="16">
+                        <span class="mensagem-erro"></span>
+                    </div>
+                   
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required minlength="8" maxlength="16">
+                        <span class="mensagem-erro"></span>
+                    </div>
 
-                    <label for="Estilo musical"></label>
-                    <input type="text" placeholder="Estilo musical">
-
-                    <label for="Email"></label>
-                    <input type="email" placeholder="Email">
-
-                    <label for="Celular"></label>
-                    <input type="tel" placeholder="Numero de telefone">
-                    
-                    <label for="Senha"></label>
-                    <input type="password" placeholder="Senha">
-
-                    <label for="Senha"></label>
-                    <input type="password" placeholder="Confirmar senha">
-                
-                    <button>Registrar</button>
-                </form>
-            </div>  
-           
+                </div>
+                <div class="continue-button">
+                    <button type="submit"><a href="#">Continuar</a> </button>
+                </div>
+            </form>
         </div>
-
-    </section>
-
-
-
+    </div>
+    <script src="/Front end/assests/js/scripts.js" type="module"></script>
 </body>
 
+
+    
 </html>
