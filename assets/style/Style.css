@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(40, 40, 40, 1)
+}
+
 section{
     background-color: #f0f0f0;
     padding: 20px;
@@ -18,7 +22,21 @@ section h1 {
 .principal {
     display: flex;
     justify-content: space-between
-}	 
+}	
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.registro { 
+    margin-bottom: 10px;
+}
 
 .main {
     width: 70%;
