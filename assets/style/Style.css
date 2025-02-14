@@ -1,5 +1,6 @@
 body {
-  background-color: rgba(40, 40, 40, 1)
+  background-color: #000000;
+  align-items: center;
 }
 
 section{
@@ -52,4 +53,98 @@ a {
     top: 50%;   
     left: 50%;    
     transform: translate(-50%, -50%);
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #282828 !important;
+    border-radius: 14px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+        color: white;
+    }
+}
+
+.container {
+    display: flex;
+    margin: 0px;
+    width: 100vh;
+    height: 100vh;
+}
+.sidebar {
+    width: 20%;
+    background-color: #282828;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 14px;
+    color: white;
+}
+.content {
+    width: 80%;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.search-bar {
+    padding: 5px;
+    width: 50%;
+}
+.profile-link {
+    text-decoration: none;
+    color: white;
+}
+.section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100vh;
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.item img {
+    width: 100px;
 }
