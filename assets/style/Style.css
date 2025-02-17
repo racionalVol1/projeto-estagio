@@ -128,3 +128,29 @@ nav {
     background-color: #535353;
    text-align:  center;
 }
+
+.criacao-playlist {
+  align-items: center;
+  background-color: #535353;
+  border-radius: 15px; 
+  text-align: center;
+  color: white;
+
+}
+
+.musica-playlist {
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.musica-playlist img {
+  width: 70px;
+}
+
+.modal-content {
+  background-color: #535353;
+  color: white;
+}
+

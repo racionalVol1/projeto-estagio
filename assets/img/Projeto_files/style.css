@@ -59,10 +59,9 @@ nav {
   margin-left: 5px;
 }
 
-
-
 .main {
   display: flex;
+  
 }
 
 .sidebar {
@@ -83,6 +82,60 @@ nav {
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #fff;
+}
+
+/* Player */
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #535353;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;  
+  text-align: center;
+}
+
+.player img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+.card {
+  align-items: center;
+    background-color: #535353;
+    border-radius: 15px; 
+    text-align: center;
+    color: white;
+}
+
+.card img {
+  width: 50%;
+  border-radius: 100%;
+}
+
+/* Perfil ouvinte */
+
+.profile-header img {
+    width: 50%;
+    border-radius: 100%;
+    background-color: #535353;
+   text-align:  center;
+}
+
+.criacao-playlist {
+  align-items: center;
+  background-color: #535353;
+  border-radius: 15px; 
+  text-align: center;
+  color: white;
+
 }
 
 
