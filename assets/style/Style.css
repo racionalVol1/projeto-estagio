@@ -5,7 +5,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 section {
@@ -71,6 +71,16 @@ nav {
   height: 100vh;
   margin-left: 0px;
 }
+
+.sidebar h3 {
+  color: white;
+  text-align: center;
+}
+
+.footer-sidebar {
+ color: white
+}
+
 
 .bg-body-tertiary {
     background-color: #535353 !important;
@@ -152,5 +162,37 @@ nav {
 .modal-content {
   background-color: #535353;
   color: white;
+}
+
+.content h2, h3 {
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+fieldset {
+  /* required to properly style form
+   elements on WebKit based browsers */
+  -webkit-appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
 }
 
