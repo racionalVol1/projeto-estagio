@@ -181,6 +181,12 @@ nav {
   color: white;
 }
 
+.content img {
+  width: 200px;
+  border-radius: 70%;
+  height: 200px;
+}
+
 .playlist-criada {
   align-items: center;
   background-color: #535353;
