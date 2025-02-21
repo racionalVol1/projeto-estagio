@@ -175,9 +175,9 @@ function login() {
         alert(`Login realizado com sucesso! Tipo de usuário: ${dados.tipo}`);
         
         if (dados.tipo === "ouvinte") {
-            window.location.href = "paginainicial.html"; // Página para ouvinte
+            window.location.href = "paginainicial.html";
         } else if (dados.tipo === "artista") {
-            window.location.href = "perfilartista.html"; // Página para artista
+            window.location.href = "perfilartista.html"; 
         }
     } else {
         alert("E-mail ou senha incorretos.");
