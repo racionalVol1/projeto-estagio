@@ -34,9 +34,9 @@ function login() {
         alert(`Login realizado com sucesso! Tipo de usuário: ${dados.tipo}`);
         
         if (dados.tipo === "ouvinte") {
-            window.location.href = "paginainicial.html";
+            window.location.href = "../Home page/paginainicial.html"; 
         } else if (dados.tipo === "artista") {
-            window.location.href = "perfilartista.html"; 
+            window.location.href = "../Paginas de perfil/perfilartista.html"; 
         }
     } else {
         alert("E-mail ou senha incorretos.");
