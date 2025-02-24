@@ -17,16 +17,16 @@
 
         <form class="row g-3">
             <div class="col-md-4">
-                <label for="nomeBanda" class="form-label">Nome da banda</label>
-                <input type="name" class="form-control" id="nomeBanda" value="" required="">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="name" class="form-control" id="nome" value="" required="">
             </div>
             <div class="col-md-4">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" value="" required="">
             </div>
             <div class="col-md-4">
-                <label for="estiloMusical" class="form-label">Estilo musical</label>
-                <input type="text" class="form-control" id="estiloMusical" value="" required="">
+                <label for="dataNascimento" class="form-label">Data de nascimento</label>
+                <input type="date" class="form-control" id="dataNascimento" value="" required="">
             </div>
             <div class="col-md-4">
                 <label for="Celular class="form-label">Celular</label>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn btn-dark" type="button" onclick="validarBanda()" >Registrar</button>
+                <button class="btn btn-dark" type="button" onclick="validar(); registrar()">Registrar</button>
             </div>
         </form>
     </section>
@@ -57,9 +57,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <Script src="/assets/js/app.js"></Script>
+        crossorigin="anonymous">
+    </script>
+    <Script src="/Registro usuario/validar.js"></Script>
+    <script src="/Registro usuario/registrar.js"></script>
 </body>
 
 </html>
