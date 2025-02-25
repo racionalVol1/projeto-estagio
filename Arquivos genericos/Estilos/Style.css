@@ -1,0 +1,199 @@
+/* Padronização das paginas */
+
+body {
+  background-color: #282828;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.registro {
+  margin-bottom: 10px;
+}
+
+.nav h1 {
+  color: white;
+}
+
+/* CSS das paginas princiapais */
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 5px;
+}
+
+.main {
+  display: flex;
+  
+}
+
+.sidebar {
+  background-color: #535353;
+  border-radius: 10px;
+  align-items: center;
+  height: 100vh;
+  margin-left: 0px;
+}
+
+.sidebar h3 {
+  color: white;
+}
+
+.sidebar a {
+  display: flex;
+  text-align: center;
+}
+
+.footer-sidebar {
+ color: white
+}
+
+
+.bg-body-tertiary {
+    background-color: #535353 !important;
+}
+
+.navbar-brand, .nav-link, .nav-link active {
+  color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.container h2 {
+  color: white;
+}
+
+/* Player */
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #535353;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;  
+  text-align: center;
+}
+
+.player img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+.card {
+    align-items: center;
+    background-color: #535353;
+    border-radius: 15px; 
+    text-align: center;
+    color: white;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 70%;
+  
+}
+
+/* Perfil ouvinte */
+
+.profile-header img {
+    width: 50%;
+    border-radius: 100%;
+    background-color: #535353;
+   text-align:  center;
+}
+
+.criacao-playlist {
+  align-items: center;
+  background-color: #535353;
+  border-radius: 15px; 
+  text-align: center;
+  color: white;
+
+}
+
+.musica-playlist {
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.musica-playlist img {
+  width: 70px;
+}
+
+.modal-content {
+  background-color: #535353;
+  color: white;
+}
+
+.content h2, h3 {
+  color: white;
+}
+
+.content img {
+  width: 200px;
+  border-radius: 70%;
+  height: 200px;
+}
+
+.playlist-criada {
+  align-items: center;
+  background-color: #535353;
+  border-radius: 15px; 
+  text-align: center;
+  color: white;
+
+}
+
+
