@@ -42,3 +42,18 @@ function login() {
         alert("E-mail ou senha incorretos.");
     }
 }
+
+fetch('http://localhost:5000/api/auth/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: 'usuarioExemplo',
+      password: 'senha123'
+    })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('Erro:', error));
+  

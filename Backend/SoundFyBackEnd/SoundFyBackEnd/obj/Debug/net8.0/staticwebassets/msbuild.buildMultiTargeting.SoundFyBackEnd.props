@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SoundFyBackEnd.props" />
+</Project>
